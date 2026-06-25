@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Jose Morales Alejandro - UNMSM</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #0284c7;
+            --text-main: #334155;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-container {
+            background-color: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+        }
+
+        .title-sub {
+            font-size: 14px;
+            color: #93c5fd;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .info-section {
+            margin-bottom: 25px;
+        }
+
+        .info-section h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .value {
+            color: #0f172a;
+            text-align: right;
+        }
+
+        p.bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-main);
+            margin-bottom: 20px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-linkedin {
+            background-color: #0077b5;
+            color: white;
+        }
+
+        .btn-linkedin:hover {
+            background-color: #005987;
+        }
+
+        .btn-email {
+            background-color: #f8fafc;
+            color: #0f172a;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-email:hover {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="header-banner">
+            <div class="avatar">🤖</div>
+            <h1>Anderson Jose Morales Alejandro</h1>
+            <div class="title-sub">Ingeniería de Inteligencia Artificial</div>
+        </div>
+        
+        <div class="content">
+            <div class="info-section">
+                <h2>Presentación</h2>
+                <p class="bio">
+                    ¡Hola! Soy estudiante de la primera promoción de Ingeniería de Inteligencia Artificial en la Universidad Nacional Mayor de San Marcos. Apasionado por la tecnología, los datos y el desarrollo de soluciones inteligentes que impacten positivamente en la sociedad.
+                </p>
+            </div>
+
+            <div class="info-section">
+                <h2>Información Académica</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Universidad:</span>
+                        <span class="value">Universidad Nacional Mayor de San Marcos</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Facultad:</span>
+                        <span class="value">Facultad de Ingeniería de Sistemas e Informática</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Ciclo:</span>
+                        <span class="value">Primer Ciclo (I)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Código de Estudiante:</span>
+                        <span class="value">26200288</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Contacto y Redes</h2>
+                <div class="links-container">
+                    <a href="https://www.linkedin.com/in/anderson-jose-morales-alejandro-464717406/" target="_blank" class="btn btn-linkedin">
+                        Conectar en LinkedIn
+                    </a>
+                    <a href="mailto:anderson.moralesa@unmsm.edu.pe" class="btn btn-email">
+                        anderson.moralesa@unmsm.edu.pe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
